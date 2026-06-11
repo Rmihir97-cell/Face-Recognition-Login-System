@@ -47,4 +47,3 @@ In this case, we are setting a user id and password for the admin of the system.
 
 INSERT INTO admin (username,password) VALUES ('your_username','your_password');
 
-  
