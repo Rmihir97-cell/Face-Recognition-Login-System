@@ -27,3 +27,21 @@ PRIMARY KEY ( uid )
 
 
 3. Run this command
+Since we have set the user id as Integer type and Auto Increment (see the previous section), here we will set a base value for it so that the counting starts from that range.
+
+ALTER TABLE employee_register AUTO_INCREMENT=1000;
+
+
+4. Create an another table ("admin") there
+
+create table admin(
+username VARCHAR NOT NULL,
+password VARCHAR NOT NULL,
+PRIMARY KEY ( username )
+);
+
+
+5. Insert default value into the "admin" table
+In this case, we are setting a user id and password for the admin of the system. You need to choose this credential as per your choice here.
+
+INSERT INTO admin (username,password) VALUES ('your_username','your_password');
